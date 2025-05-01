@@ -1,11 +1,9 @@
 from rich import print
-import tkinter as tk
-from tkinter import ttk
+'''Якщо виконувати программу в консолі Windows або увімкнути емулювання терміналу в налаштуваннях Run/Debug configuration буде краще'''
 
 
 class Cat:
-    def __init__(self, name="[bold red][Default name][/bold red]", age=0, color="[bold red][Default color][/bold red]",
-                 sound="Мяу"):
+    def __init__(self, name="[bold red][Default name][/bold red]", age=0, color="[bold red][Default color][/bold red]", sound="Мяу"):
         self.name = name
         self.age = age
         self.color = color
@@ -20,5 +18,5 @@ name = input("Як будуть звати Вашого котика: ")
 age = input("Скільки йому/їй років: ")
 color = input("Якого він/вона кольору: ")
 sound = input("Що каже котик: ")
-cat = Cat(name if name else "[bold red][Default name][/bold red]", age if age else 0, color if color else "[bold red][Default color][/bold red]", sound if sound else "[bold red][Default sound][/bold red]")
+cat = Cat(name if name else "[bold red][Default name][/bold red]", age if age else 0, color if color else "[bold red][Default color][/bold red]", sound if sound else "мяу")
 cat.speak()
